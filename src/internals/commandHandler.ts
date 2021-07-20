@@ -112,7 +112,7 @@ function startHandler(client: Client): void {
         return;
 
       }
-      cmd.execute(interaction);
+      cmd.execute(interaction).catch(console.error)
 
     }
   );
